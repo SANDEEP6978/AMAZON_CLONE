@@ -1,0 +1,269 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.h_part{
+    display:flex;
+    background-color:#131921;
+    color: white;
+    height: 70px;
+    justify-content: space-between;
+    align-items:center ;  
+}
+.logo1{
+   height: 70px;
+   padding-left: 5px;
+}
+ .para{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace; 
+   transform: translateY(-2px);
+   
+}
+.l-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  .search{
+    display:flex;
+    min-width:100px;
+    max-width: 600px;
+    height: 40px;
+    border: 2px solid #febd69;
+    width: 100%;
+    border-radius: 4px;
+    overflow:hidden;/*andar ka content bahar na nikle*/
+    background-color: white;
+  }
+  .search-select{
+    background-color: #f3f3f3;
+    border:none;
+    padding: 0 8px;
+    font-size: 14px;
+    cursor:pointer;/*cursor arrow badal kar hand pointer banjaye
+*/  }
+.search-input{
+    flex:1;
+    border:none;
+    padding:0 10px;
+    font-size: 14;
+}
+.search-button{
+ background-color: #febd69;
+  border: none;
+  width: 45px;
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+   justify-content: center;
+}
+.search-button i{
+    font-size:18px;
+    color: black;
+}
+.search-select:focus{
+    outline:none;
+}
+.country{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    
+   
+    
+
+}
+.country img{
+    height:40px;
+    
+}
+.lang-select{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace; 
+   transform: translateY(-2px);
+    cursor: pointer;
+   
+}
+.account-section,.order-section{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    cursor:pointer;
+}
+.top-text{
+    font-size: 12px;
+    color: #ccc;
+    
+}
+.bottom-text{
+  fontv-size:14px;
+  font-weight: bold;
+}
+.cart-section{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor:pointer;
+}
+.icon i{
+  font-size: 30px;
+  padding-right: 14px;
+}
+.cart-text{
+    font-weight: bold;
+}
+.cart-count{
+    position:absolute;
+    top:5px;
+    right:10px;
+  background-color: orange;
+    border-radius: 50%;
+    padding:2px 6px;
+    font-weight:12px;
+    font-weight: bold;
+}
+/*pannel section*/
+.p_bar {
+  background-color: #232f3e;/*background color*/
+  height: 40px;/*pannel ki height*/
+  width: 100%;/*full screen lega*/
+  display: flex;/*all span ek line mein aa jyegnge*/
+  align-items: center;/*vertically align center*/
+  padding-left: 15px;/*left side 15px padding (inside)*/
+  gap: 20px;/*gap 20px */
+  color: white;/*text color white*/
+  font-size: 14px;/* size of text*/
+  font-family: Arial, sans-serif;/*font color*/
+}
+
+.menu {
+  cursor: pointer;/*hover pe pointer hoga */
+  transition: 0.3s;/*smooth hover effect*/
+}
+
+.menu:hover {
+  text-decoration: underline;/*text underline hoga jab hover hoga*/
+  color: #f3a847; /* Amazon's yellow */
+}
+
+.bx-menu {
+  font-size: 18px;/*icon size 18px*/
+  margin-right: 4px;/*icon and all space is 4px*/
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 300px;
+  z-index: 1;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-height: 100%;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider > div {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+/*product session*/
+.box{
+   height:300px;
+   border: #131921 2px solid;
+   width: 300px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding:10px ;   
+}
+.box a{
+  text-align:none;
+}
+.product-section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position:absolute;
+  left:0;
+  justify-content:space-evenly ;
+ background-color: transparent;
+ padding: 20px;
+ z-index: 9999;
+ top:425px;
+ gap:60px;
+ margin-left: 50px;
+}
+.box-image{
+  overflow:hidden;
+  margin-top: 10x;
+  
+}
+footer {
+  position: relative;
+  margin-top: 500px; /* jitna bhi aapka product-section cover karta ho, us hisaab se */
+  background-color: #232F3E;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+}
+.f_panel2{
+  background-color: #222f32;
+  color: white;
+}
+f_panel2 a{
+  color: white;
+  text-decoration: white;
+  height: 300px;
+}
+
